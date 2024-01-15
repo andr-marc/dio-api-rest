@@ -1,4 +1,4 @@
-package com.andremarc.diorestapi.model;
+package com.andremarc.diorestapi.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
