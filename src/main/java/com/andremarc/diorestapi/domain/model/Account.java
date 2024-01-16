@@ -15,7 +15,7 @@ public class Account {
     @Column(unique = true)
     private String number;
 
-    private String agengy;
+    private String agency;
 
     @Column(precision = 13, scale = 2)
     private BigDecimal balance;

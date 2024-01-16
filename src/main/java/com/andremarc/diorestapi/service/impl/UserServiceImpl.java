@@ -3,16 +3,19 @@ package com.andremarc.diorestapi.service.impl;
 import com.andremarc.diorestapi.domain.model.User;
 import com.andremarc.diorestapi.domain.repository.UserRepository;
 import com.andremarc.diorestapi.service.UserService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
 
 @Service
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
+
+    public UserServiceImpl(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @Override
     public User findById(Long id) {
